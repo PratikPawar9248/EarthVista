@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ISRO Theme - Indian Space Research Organisation Colors */
+    --background: 220 15% 4%;
+    --foreground: 210 40% 98%;
+    --card: 220 15% 7%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 15% 7%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 25 100% 60%;        /* ISRO Saffron Orange */
+    --primary-foreground: 220 15% 4%;
+    --secondary: 220 15% 10%;
+    --secondary-foreground: 210 40% 95%;
+    --muted: 220 15% 10%;
+    --muted-foreground: 215 25% 75%;
+    --accent: 120 100% 25%;        /* ISRO Green */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 15%;
+    --input: 220 15% 10%;
+    --ring: 25 100% 60%;           /* ISRO Saffron ring */
+    --radius: 0.75rem;
+
+    /* ISRO Mission-themed gradients */
+    --gradient-isro: linear-gradient(135deg, hsl(25 100% 60%) 0%, hsl(220 100% 40%) 50%, hsl(120 100% 25%) 100%);
+    --gradient-mission: linear-gradient(180deg, hsl(25 100% 50%) 0%, hsl(220 100% 35%) 50%, hsl(220 15% 8%) 100%);
+    --gradient-satellite: linear-gradient(90deg, hsl(25 100% 60%) 0%, hsl(0 0% 100%) 50%, hsl(120 100% 25%) 100%);
+    --gradient-header: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(25 100% 10%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 15% 8%) 0%, hsl(25 50% 8%) 100%);
+    
+    /* ISRO glow and shadow effects */
+    --glow-primary: 0 0 30px hsl(25 100% 60% / 0.5);      /* Saffron glow */
+    --glow-accent: 0 0 25px hsl(120 100% 25% / 0.6);      /* Green glow */
+    --glow-mission: 0 0 20px hsl(220 100% 60% / 0.4);     /* Mission blue glow */
+    --shadow-elegant: 0 10px 40px rgba(255, 153, 51, 0.3);
+    --shadow-card: 0 8px 32px rgba(255, 153, 51, 0.2);
+    --shadow-button: 0 4px 16px rgba(255, 153, 51, 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    /* ISRO Theme Background - Indian Space Research Organisation */
+    background: 
+      /* Satellite constellation pattern */
+      radial-gradient(3px 3px at 25px 40px, #ff9933, transparent),  /* ISRO Orange satellites */
+      radial-gradient(2px 2px at 80px 20px, #ffffff, transparent),   /* White satellites */
+      radial-gradient(2px 2px at 150px 60px, #138808, transparent), /* Green satellites */
+      radial-gradient(1px 1px at 200px 35px, #ff9933, transparent), /* Orange stars */
+      radial-gradient(1px 1px at 120px 80px, #ffffff, transparent), /* White stars */
+      radial-gradient(2px 2px at 60px 70px, #4169e1, transparent),  /* Blue mission markers */
+      
+      /* Orbital paths */
+      conic-gradient(from 0deg at 30% 30%, 
+        transparent 0deg, rgba(255, 153, 51, 0.1) 45deg, 
+        transparent 90deg, rgba(255, 153, 51, 0.1) 135deg, transparent 180deg),
+      
+      /* Earth from space - Indian Ocean focus */
+      radial-gradient(ellipse 40% 60% at 70% 40%, 
+        rgba(19, 136, 8, 0.3) 0%,    /* Indian landmass (green) */
+        rgba(65, 105, 225, 0.4) 30%, /* Indian Ocean (blue) */
+        rgba(0, 50, 150, 0.6) 60%,   /* Deep ocean */
+        transparent 100%),
+      
+      /* ISRO Mission gradient - Saffron to Space Blue */
+      linear-gradient(135deg, 
+        #ff9933 0%,      /* ISRO Saffron */
+        #ff6600 8%,      /* Launch flame */
+        #4169e1 15%,     /* Mission blue */
+        #001f3f 25%,     /* Deep space */
+        #000d1a 40%,     /* Space black */
+        #001122 60%,     /* Ocean depth */
+        #002244 80%,     /* Deep water */
+        #000811 100%     /* Abyss */
+      ),
+      
+      /* Space background with Indian tricolor accent */
+      radial-gradient(ellipse at top, 
+        rgba(255, 153, 51, 0.1) 0%,  /* Saffron glow */
+        rgba(255, 255, 255, 0.05) 20%, /* White space */
+        rgba(19, 136, 8, 0.08) 40%,   /* Green Earth glow */
+        rgba(0, 20, 40, 0.9) 70%,     /* Deep space */
+        rgba(0, 10, 20, 0.95) 100%    /* Space black */
+      );
+    background-size: 
+      250px 150px,  /* Satellite constellation */
+      200px 120px,  /* White satellites */
+      180px 140px,  /* Green satellites */
+      220px 100px,  /* Orange stars */
+      160px 130px,  /* White stars */
+      240px 110px,  /* Mission markers */
+      300px 300px,  /* Orbital paths */
+      100% 100%,    /* Earth view */
+      100% 100%,    /* ISRO gradient */
+      100% 100%;    /* Space background */
+    background-attachment: fixed;
+    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: hsl(var(--foreground));
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* ISRO Satellite orbital paths overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      /* Satellite orbital trails */
+      linear-gradient(90deg, transparent 0%, rgba(255, 153, 51, 0.05) 50%, transparent 100%),  /* ISRO Orange trail */
+      linear-gradient(45deg, transparent 0%, rgba(255, 255, 255, 0.03) 50%, transparent 100%), /* White satellite path */
+      linear-gradient(135deg, transparent 0%, rgba(19, 136, 8, 0.04) 50%, transparent 100%);   /* Green mission path */
+    background-size: 300% 100%, 250% 100%, 200% 100%;
+    animation: satelliteOrbits 25s ease-in-out infinite, missionPaths 35s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  /* ISRO Mission markers and satellites overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(255, 153, 51, 0.12) 0%, transparent 40%),  /* PSLV launch site */
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 45%),  /* Chandrayaan mission */
+      radial-gradient(circle at 60% 70%, rgba(19, 136, 8, 0.1) 0%, transparent 35%),      /* Earth observation */
+      radial-gradient(circle at 15% 80%, rgba(65, 105, 225, 0.09) 0%, transparent 50%),   /* Ocean monitoring */
+      radial-gradient(circle at 90% 60%, rgba(255, 153, 51, 0.07) 0%, transparent 30%);   /* Mangalyaan Mars */
+    background-size: 350px 350px, 400px 400px, 280px 280px, 320px 320px, 450px 450px;
+    animation: isroMissions 30s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60 rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+}
+
+@layer components {
+  .ocean-card {
+    @apply bg-card/70 backdrop-blur-md border border-border/70 rounded-xl;
+    background: 
+      linear-gradient(135deg, 
+        rgba(255, 153, 51, 0.15) 0%,  /* ISRO Saffron */
+        rgba(0, 30, 60, 0.9) 25%,     /* Deep space */
+        rgba(19, 136, 8, 0.1) 50%,    /* ISRO Green */
+        rgba(0, 20, 40, 0.95) 100%    /* Space black */
+      ),
+      radial-gradient(circle at top right, rgba(255, 153, 51, 0.08) 0%, transparent 60%); /* ISRO glow */
+    box-shadow: 
+      0 8px 32px rgba(255, 153, 51, 0.2),     /* ISRO shadow */
+      0 0 0 1px rgba(255, 153, 51, 0.3),      /* ISRO border glow */
+      inset 0 1px 0 rgba(255, 255, 255, 0.1); /* Inner highlight */
+    border: 1px solid rgba(255, 153, 51, 0.4); /* ISRO border */
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ocean-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent);
+  }
+
+  .ocean-card:hover {
+    box-shadow: 
+      0 12px 40px rgba(0, 100, 200, 0.6),
+      0 0 0 1px rgba(0, 200, 255, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px) scale(1.02);
+    border-color: rgba(0, 200, 255, 0.5);
+    animation: deepOceanPulse 2s ease-in-out infinite;
+  }
+
+  .ocean-button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    transition: var(--transition-bounce);
+    box-shadow: var(--glow-primary), var(--shadow-button);
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+
+  .ocean-button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--glow-primary), 0 8px 25px rgba(0, 0, 0, 0.4);
+    color: hsl(var(--primary-foreground));
+  }
+
+  .ocean-button:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .data-point {
+    @apply cursor-pointer transition-all duration-300;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  .data-point:hover {
+    transform: scale(1.15);
+    filter: brightness(1.3) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+  }
+
+  .chart-container {
+    @apply bg-card/50 backdrop-blur-md rounded-xl border border-border/50 p-6;
+    background: var(--gradient-card);
+    color: hsl(var(--foreground));
+    box-shadow: var(--shadow-card);
+  }
+
+  .stats-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+
+  .stat-card {
+    @apply ocean-card p-6 text-center;
+    background: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--secondary)) 100%);
+  }
+
+  .stat-value {
+    @apply text-3xl font-bold text-primary;
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.3);
+    font-weight: 700;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground mt-2;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Enhanced typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--primary)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: hsl(var(--foreground));
+    font-weight: 400;
+  }
+
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground)) !important;
+    font-weight: 400;
+  }
+
+  .text-foreground {
+    color: hsl(var(--foreground)) !important;
+    font-weight: 500;
+  }
+
+  .text-primary {
+    color: hsl(var(--primary)) !important;
+    font-weight: 600;
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.2);
+  }
+
+  .text-accent {
+    color: hsl(var(--accent)) !important;
+    font-weight: 600;
+    text-shadow: 0 0 8px hsl(var(--accent) / 0.2);
+  }
+
+  /* Enhanced button styling */
+  .btn-enhanced {
+    @apply transition-all duration-300 ease-out;
+    color: hsl(var(--foreground));
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    box-shadow: var(--shadow-button);
+    border-radius: 0.75rem;
+  }
+
+  .btn-enhanced:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-enhanced:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Enhanced card styling */
+  .card-enhanced {
+    @apply bg-card/60 backdrop-blur-md border border-border/60 rounded-xl;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent);
+  }
+
+  .card-enhanced:hover {
+    border-color: hsl(var(--primary) / 0.4);
+    box-shadow: var(--shadow-elegant);
+    transform: translateY(-1px);
+  }
+
+  /* Enhanced input styling */
+  input, select, textarea {
+    color: hsl(var(--foreground)) !important;
+    background-color: hsl(var(--input)) !important;
+    border-color: hsl(var(--border)) !important;
+    transition: var(--transition-smooth);
+    font-weight: 400;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: hsl(var(--primary)) !important;
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.2) !important;
+  }
+
+  input::placeholder, select::placeholder, textarea::placeholder {
+    color: hsl(var(--muted-foreground)) !important;
+    font-weight: 400;
+  }
+
+  /* Tab styling */
+  [data-state="active"] {
+    background: hsl(var(--primary) / 0.15) !important;
+    color: hsl(var(--primary)) !important;
+    border-color: hsl(var(--primary) / 0.3) !important;
+    box-shadow: 0 0 10px hsl(var(--primary) / 0.2);
+  }
+
+  /* Badge styling */
+  .badge-enhanced {
+    @apply px-3 py-1 bg-primary/20 text-primary text-xs rounded-full border border-primary/30;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Loading animation */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: var(--glow-primary);
+    }
+    50% {
+      box-shadow: var(--glow-primary), 0 0 40px hsl(var(--primary) / 0.6);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: calc(200px + 100%) 0;
+    }
+  }
+
+  /* Ocean and Galaxy Animations */
+  @keyframes oceanWaves {
+    0% {
+      background-position: 0% 0%, 0% 0%;
+      opacity: 0.8;
+    }
+    25% {
+      background-position: 25% 10%, 15% 5%;
+      opacity: 1;
+    }
+    50% {
+      background-position: 50% 0%, 30% 0%;
+      opacity: 0.9;
+    }
+    75% {
+      background-position: 75% -10%, 45% -5%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 100% 0%, 60% 0%;
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes galaxyShift {
+    0% {
+      transform: translateX(0) rotate(0deg);
+    }
+    25% {
+      transform: translateX(10px) rotate(0.5deg);
+    }
+    50% {
+      transform: translateX(0) rotate(1deg);
+    }
+    75% {
+      transform: translateX(-10px) rotate(0.5deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+
+  @keyframes floatingParticles {
+    0% {
+      background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%;
+      opacity: 0.6;
+    }
+    25% {
+      background-position: 25% 25%, 75% 75%, 75% 25%, 25% 75%;
+      opacity: 0.8;
+    }
+    50% {
+      background-position: 50% 50%, 50% 50%, 100% 50%, 50% 50%;
+      opacity: 1;
+    }
+    75% {
+      background-position: 75% 75%, 25% 25%, 25% 75%, 75% 25%;
+      opacity: 0.8;
+    }
+    100% {
+      background-position: 100% 100%, 0% 0%, 0% 100%, 100% 0%;
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes deepOceanPulse {
+    0%, 100% {
+      box-shadow: 
+        0 0 20px rgba(0, 150, 255, 0.3),
+        inset 0 0 20px rgba(0, 100, 200, 0.1);
+    }
+    50% {
+      box-shadow: 
+        0 0 40px rgba(0, 200, 255, 0.5),
+        inset 0 0 30px rgba(0, 150, 255, 0.2);
+    }
+  }
+
+  @keyframes stellarTwinkle {
+    0%, 100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  /* ISRO Mission Animations */
+  @keyframes satelliteOrbits {
+    0% {
+      background-position: 0% 0%, 0% 0%, 0% 0%;
+      opacity: 0.7;
+    }
+    25% {
+      background-position: 25% 15%, 20% 10%, 30% 5%;
+      opacity: 1;
+    }
+    50% {
+      background-position: 50% 0%, 40% 0%, 60% 0%;
+      opacity: 0.8;
+    }
+    75% {
+      background-position: 75% -15%, 60% -10%, 90% -5%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 100% 0%, 80% 0%, 120% 0%;
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes missionPaths {
+    0% {
+      transform: translateX(0) rotate(0deg);
+    }
+    20% {
+      transform: translateX(15px) rotate(0.3deg);
+    }
+    40% {
+      transform: translateX(0) rotate(0.6deg);
+    }
+    60% {
+      transform: translateX(-15px) rotate(0.3deg);
+    }
+    80% {
+      transform: translateX(0) rotate(-0.3deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+
+  @keyframes isroMissions {
+    0% {
+      background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%, 100% 50%;
+      opacity: 0.6;
+    }
+    20% {
+      background-position: 20% 20%, 80% 80%, 70% 20%, 20% 80%, 80% 30%;
+      opacity: 0.9;
+    }
+    40% {
+      background-position: 40% 40%, 60% 60%, 90% 40%, 40% 60%, 60% 10%;
+      opacity: 1;
+    }
+    60% {
+      background-position: 60% 60%, 40% 40%, 10% 60%, 60% 40%, 40% 90%;
+      opacity: 0.9;
+    }
+    80% {
+      background-position: 80% 80%, 20% 20%, 30% 80%, 80% 20%, 20% 70%;
+      opacity: 0.8;
+    }
+    100% {
+      background-position: 100% 100%, 0% 0%, 50% 100%, 100% 0%, 0% 50%;
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes isroPulse {
+    0%, 100% {
+      box-shadow: 
+        0 0 20px rgba(255, 153, 51, 0.4),
+        inset 0 0 20px rgba(255, 153, 51, 0.1);
+    }
+    50% {
+      box-shadow: 
+        0 0 40px rgba(255, 153, 51, 0.7),
+        inset 0 0 30px rgba(255, 153, 51, 0.2);
+    }
+  }
+
+  @keyframes rocketLaunch {
+    0% {
+      opacity: 0.8;
+      transform: translateY(0) scale(1);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.05);
+    }
+    50% {
+      opacity: 0.9;
+      transform: translateY(-10px) scale(1.1);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.05);
+    }
+    100% {
+      opacity: 0.8;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.1), transparent);
+    background-size: 200px 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.6), hsl(var(--accent) / 0.6));
+    border-radius: 4px;
+    border: 1px solid hsl(var(--border));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.8));
+  }
+
+  /* Selection styling */
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+
+  ::-moz-selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Oceanographic Theme Utility Classes */
+.ocean-waves {
+  animation: oceanWaves 20s ease-in-out infinite;
+}
+
+.galaxy-shift {
+  animation: galaxyShift 30s linear infinite;
+}
+
+.floating-particles {
+  animation: floatingParticles 25s ease-in-out infinite;
+}
+
+.deep-ocean-pulse {
+  animation: deepOceanPulse 3s ease-in-out infinite;
+}
+
+.stellar-twinkle {
+  animation: stellarTwinkle 2s ease-in-out infinite;
+}
+
+/* ISRO Theme Utility Classes */
+.isro-gradient {
+  background: linear-gradient(135deg, 
+    #ff9933 0%,      /* ISRO Saffron */
+    #ffffff 33%,     /* White */
+    #138808 66%,     /* ISRO Green */
+    #4169e1 100%);   /* Mission Blue */
+}
+
+.satellite-orbit {
+  animation: satelliteOrbits 25s ease-in-out infinite;
+}
+
+.mission-path {
+  animation: missionPaths 35s linear infinite;
+}
+
+.isro-missions {
+  animation: isroMissions 30s ease-in-out infinite;
+}
+
+.isro-pulse {
+  animation: isroPulse 3s ease-in-out infinite;
+}
+
+.rocket-launch {
+  animation: rocketLaunch 4s ease-in-out infinite;
+}
+
+.space-gradient {
+  background: radial-gradient(ellipse at center, 
+    rgba(255, 153, 51, 0.2) 0%,  /* ISRO Saffron glow */
+    rgba(0, 20, 40, 0.8) 40%, 
+    rgba(0, 10, 20, 0.95) 100%);
+}
+
+.card-enhanced {
+  background: 
+    linear-gradient(135deg, 
+      rgba(0, 30, 60, 0.95) 0%, 
+      rgba(0, 50, 100, 0.9) 50%, 
+      rgba(0, 20, 40, 0.98) 100%
+    );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 150, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 50, 100, 0.4),
+    0 0 0 1px rgba(0, 150, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.card-enhanced:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(0, 100, 200, 0.6),
+    0 0 0 1px rgba(0, 200, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(0, 200, 255, 0.5);
+}
+
+.ocean-text {
+  background: linear-gradient(135deg, #00aaff, #0088cc, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.depth-shadow {
+  box-shadow: 
+    0 4px 16px rgba(0, 50, 100, 0.3),
+    0 8px 32px rgba(0, 30, 60, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}

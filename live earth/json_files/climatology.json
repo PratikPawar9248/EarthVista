@@ -1,0 +1,491 @@
+[
+{
+        "name": "Land Climatology",
+        "selection_name": "Land Climatology",
+        "flag":true,
+        "root":"yes",
+        "children":[
+    {
+        "name": "Global 30-Year Mean Monthly Climatology 1961-1990 (New et al.)",
+        "selection_name": "Global 30-Year Mean Monthly Climatology 1961-1990 (New et al.)",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "Wet Day Frequency",
+                "selection_name": "Wet Day Frquency",
+                "units":"K",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_WET.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "WET","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0",
+                "range_end_value":"31",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Mean Temperature",
+                "selection_name": "Mean Temperature",
+                "units":"K",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_TMP.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "TMP","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "range_start_value":"0",
+                "range_end_value":"52",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Vapour Pressure",
+                "selection_name": "Vapour Pressure",
+                "units": "Pa",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_VAP.nc4",
+                     "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc", 
+                    "params": { "LAYERS": "VAP","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"31",  
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Wind",
+                "selection_name": "Wind",
+                "units": "mm",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",
+                     "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_WND.nc4",
+                     "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "WND","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"14",  
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Maximum Temperature",
+                "selection_name": "Maximum Temperature",
+                "units":"mm",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_TMX.nc4",
+                     "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc", 
+                    "params": { "LAYERS": "TMX","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"49", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+             {
+                "name": "Minimum Temperaure",
+                "selection_name": "Minimum Temperaure",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_TMN.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "TMN","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"56", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+			     {
+                "name": "Radiation",
+                "selection_name": "Radiation",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_RAD.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "RAD","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"29", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+			     {
+                "name": "Precipitation",
+                "selection_name": "Precipitation",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_PRE.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "PRE","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"22", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+			{
+                "name": "Ground-frost Frequency",
+                "selection_name": "Ground-frost Frequency",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_FRS.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "FRS","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"0",
+                "range_end_value":"31", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+			{
+                "name": "Diurnal Temperature Range",
+                "selection_name": "Diurnal Temperature Range",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_DTR.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "DTR","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"3",
+                "range_end_value":"40",  
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+			{
+                "name": "Cloud Cover",
+                "selection_name": "Cloud Cover",
+                "units": "%",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Land",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "url_climatology":"/live_data/wms/liveNew/climatology/Land_30y_1961_1990/climate6190_CLD.nc4",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/Land_30y_1961_1990/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "CLD","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                  "range_start_value":"5",
+                "range_end_value":"95", 
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            }
+        ]
+    }
+
+]
+
+},
+{
+   "name": "Ocean Climatology",
+        "selection_name": "Ocean Climatology",
+        "flag":true,
+        "root":"yes",
+        "children":[
+    {
+        "name": "30-Year Mean Monthly Climatology 1987-2016",
+        "selection_name": "30-Year Mean Monthly Climatology 1987-2016",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "Upwelling Index (UI)",
+                "selection_name": "Upwelling Index",
+                "units":"",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Ocean",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/ocean/clime_monthly_UI_coast_IO_1887_2016_ccmp_v2.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/ocean/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "UWI","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"-5",
+                "range_end_value":"5",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            }
+				]
+}
+]
+},
+{
+   "name": "Solar Atlas",
+        "selection_name": "Solar Atlas",
+        "flag":true,
+        "root":"yes",
+        "children":[
+    {
+        "name": "Monthly Solar Atlas 1994-2018 (THE WORLD BANK)",
+        "selection_name": "Monthly Solar Atlas 1994-2018 (THE WORLD BANK)",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "Potential Photovoltic Electricity Production (PVOUT)",
+                "selection_name": "Potential Photovoltic Electricity Production",
+                "units":"kWh/kWp",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Monthly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/monthly/MonthlyMerged/GLOBAL_PVOUT_MONTHLY_CF_Time.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/monthly/MonthlyMerged/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "PVOUT","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+
+                "range_start_value":"0.0",
+                "range_end_value":"7.816",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            }
+				]
+	},
+    {
+        "name": "Yearly Solar Atlas 1994-2018 (THE WORLD BANK)",
+        "selection_name": "Yearly Solar Atlas 1994-2018 (THE WORLD BANK)",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "Diffuse Horizontal Irradiation (DIF)",
+                "selection_name": "Diffuse Horizontal Irradiation",
+                "units":"kWh/m2",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_DIF_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "DIF","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0.817",
+                "range_end_value":"2.9777",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Direct Normal Irradiation (DNI)",
+                "selection_name": "Direct Normal Irradiation",
+                "units":"kWh/m2",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_DNI_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/ocean/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "DNI","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0.0",
+                "range_end_value":"10.572",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Global Horizontal Irradiation (GHI)",
+                "selection_name": "Global Horizontal Irradiation",
+                "units":"kWh/m2",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_GHI_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "GHI","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"1.139",
+                "range_end_value":"7.491",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Global Irradiation At Optimum Tilt (GTI)",
+                "selection_name": "Global Irradiation At Optimum Tilt",
+                "units":"kWh/m2",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_GTI_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "GTI","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0.0",
+                "range_end_value":"8.207",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Optimum Angle (OPTA)",
+                "selection_name": "Optimum Angle",
+                "units":"",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_OPTA_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "OPTA","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0.0",
+                "range_end_value":"56.0",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Potential Photovoltic Electricity Production (PVOUT)",
+                "selection_name": "Potential Photovoltic Electricity Production",
+                "units":"kWh/kWp",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_PVOUT_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "PVOUT","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"0.0",
+                "range_end_value":"6.767",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "Air Temperature (TEMP)",
+                "selection_name": "Air Temperature",
+                "units":"C",
+                "flag":true,
+                "satellite":"Climatology",
+                "sensor":"Solar Yearly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS",                    
+                    "url_climatology":"/live_data/wms/liveNew/climatology/solar/yearly/GLOBAL_TEMP_CF.nc",
+                    "url_climatology_prefix": "/live_data/wms/liveNew/climatology/solar/yearly/",
+                    "url_climatology_suffix":".nc",
+                    "params": { "LAYERS": "TEMP","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                
+                "range_start_value":"-37.2",
+                "range_end_value":"34.9",    
+                "showLegendVar":false,
+                "style":"boxfill/rainbow"
+            }				]
+	}
+]
+}]
+
+	
+            

@@ -1,0 +1,152 @@
+[
+    {
+"name":"Admin Boundaries", 
+"displayname":"Admin Boundaries",
+"active":true,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "boundary_merge", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"National Highways", 
+"displayname":"National Highways",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "INDIA_NHROAD250NATGIS2005", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"District Roads", 
+"displayname":"District Roads",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "worldview:INDIA_DISTRD250NATGIS2005", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"Airports", 
+"displayname":"Airports",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "worldview:INDIA_AIRPORT250NATGIS2005", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"Railway Tracks", 
+"displayname":"Railway Tracks",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "worldview:INDIA_RAIL250NATGIS2005", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"District Population",
+"displayname":"District Population", 
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "worldview:INDIA_DISTRICT250NATGIS2005_pop", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"Rivers", 
+"displayname":"Rivers",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "INDIA_RIVERS250NATGIS2005", "tiled":true}
+},
+"showLegendVar":false
+},
+{
+"name":"Ports",
+"displayname":"Ports",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"url": "/geoserver_2/risat_data_ports/wms",
+"opacity":0,
+"params": { "LAYERS": "world_ports", "tiled":true}
+
+},
+"showLegendVar":false
+},
+{
+"name":"Cyclone Risk Map", 
+"displayname":"Cyclone Risk Map",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "cyclone_prone_proj"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Landslide Risk Map", 
+"displayname":"Landslide Risk Map",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "landslide_risk"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Fire Risk Map", 
+"displayname":"Fire Risk Map",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/worldview/wms",
+"opacity":0,
+"params": { "LAYERS": "fire_risk"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Land Slide", 
+"displayname":"Land Slide",
+"active":false,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/live/wms?",
+"opacity":0,
+"params": { "LAYERS": "global_landslide"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+}
+]
+

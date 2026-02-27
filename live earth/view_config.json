@@ -1,0 +1,15 @@
+
+[   
+{
+    "name": "center",
+    "params": {"lon":9095477,"lat":2598786}
+},
+{
+   "name": "zoom",
+   "params": {"level":4.2}
+},
+{
+    "name":"application_name",
+    "params":{"title":"LIVE"}
+}
+]

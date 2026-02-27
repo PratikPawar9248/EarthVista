@@ -1,0 +1,81 @@
+
+[
+   {
+"name":"True Marble",
+"displayname":"True Marble", 
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/mosdacview/wms",
+"opacity":0,
+"params": { "LAYERS": "true_marble"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Black Marble",
+"displayname":"Black Marble", 
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/wms",
+"opacity":0,
+"params": { "LAYERS": "black_marble"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Natural Earth",
+"displayname":"Natural Earth", 
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/wms",
+"opacity":0,
+"params": { "LAYERS": "natural_earth"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"OSM", 
+"displayname":"Open Street Map",
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/mapproxy/service?",
+"opacity":1,
+"params": { "LAYERS": "osm"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"Bhuvan Maps", 
+"displayname":"Bhuvan Maps",
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "https://bhuvan-vec1.nrsc.gov.in/bhuvan/gwc/service/wms?",
+"opacity":0,
+"params": { "LAYERS": "india3"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+},
+{
+"name":"DEM", 
+"displayname":"DEM",
+"active":true,
+"source": {
+"type": "ImageWMS",
+"urlbase": "/geoserver_2/forecast_india/wms",
+"opacity":0,
+"params": { "LAYERS": "forecast_india:GTOPO_DEM"}
+},
+"showLegendVar":false,
+"showBaseSelection":true
+}
+]

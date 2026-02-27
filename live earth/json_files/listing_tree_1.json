@@ -1,0 +1,2467 @@
+[
+    {
+        "name": "Standard Products",
+        "root":"yes",
+        "selection_name": "Standard Products",
+        "flag":true,
+        "children": [     
+            {
+                "name": "INSAT3R",
+                "selection_name": "INSAT3R",
+                "flag":true,
+                "children": [
+                    {
+                        "name": "IMAGER",
+                        "selection_name": "IMAGER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "TIR1 Count",
+                                "selection_name": "TIR1 Count",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD4km/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_TIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    {
+                                "name": "TIR2 Count",
+                                "selection_name": "TIR2 Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD4km/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_TIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    {
+                                "name": "MIR Count",
+                                "selection_name": "MIR Count",
+                                "modified_name": "MIR Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD4km/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_MIR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    {
+                                "name": "SWIR Count",
+                                "selection_name": "SWIR Count",
+                                "modified_name": "SWIR Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD1km/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_SWIR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+                            {
+                                "name": "Visible Count",
+                                "selection_name": "Visible Count",
+                                "modified_name": "Visible Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD1km/products/Insat3r/3R_IMG/",
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_VIS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+                            {
+                                "name": "Water Vapour Count",
+                                "selection_name": "Water Vapour Count",
+                                "modified_name": "Water Vapour Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3RIMG_L1B_STD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL1BSTD8km/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L1B_STD_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_WV","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            }]
+                    },
+                    {
+                        "name": "SOUNDER",
+                        "selection_name": "SOUNDER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Sector A",
+                                "selection_name": "Sector A",
+                                "flag":true,
+                                "children": [
+                                    {
+                                        "name": "LWIR1 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 1 Count (Sector A)",
+                                        "modified_name": "Longwave Infrared 1 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR2 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 2 Count (Sector A)",
+                                        "modified_name": "Longwave Infrared 2 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR3 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR4 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 4 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR5 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 5 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR6 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 6 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR6","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR7 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 7 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR7","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR1 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 1 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR2 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 2 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR3 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR4 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 4 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR5 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 5 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR1 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 1 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR2 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 2 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR3 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR4 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 4 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR5 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 5 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR6 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 6 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR6","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },			  
+                                    {
+                                        "name": "Visible Count (Sector A)",
+                                        "selection_name": "Visible Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3RSND_L1B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_VIS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    }]
+                            } 
+                        ]
+                    }]},
+                    {
+                "name": "INSAT3S",
+                "selection_name": "INSAT3S",
+                "flag":true,
+                "children": [
+                    {
+                        "name": "IMAGER",
+                        "selection_name": "IMAGER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "TIR1 Count",
+                                "selection_name": "TIR1 (10.2-11.2 \u03BCm)",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD4km/products/Insat3s/3S_IMG/", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_TIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    		    {
+                                "name": "TIR2 Count",
+                                "selection_name": "TIR2 (11.5-12.5 \u03BCm)",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD4km/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_TIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    {
+                                "name": "MIR Count",
+                                "selection_name": "MIR (3.8-4.0 \u03BCm)",
+                                "modified_name": "MIR Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD4km/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_MIR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+			    {
+                                "name": "SWIR Count",
+                                "selection_name": "SWIR (1.55-1.70 \u03BCm)",
+                                "modified_name": "SWIR Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD1km/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_SWIR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+                            {
+                                "name": "Visible Count",
+                                "selection_name": "VISIBLE (0.55-0.75 \u03BCm)",
+                                "modified_name": "Visible Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD1km/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_VIS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            },
+                            {
+                                "name": "Water Vapour Count",
+                                "selection_name": "WATER VAPOUR (6.5-7.0 \u03BCm)",
+                                "modified_name": "Water Vapour Count",
+                                "flag":true,
+                                "data_type":"satellite", 
+                                "sub_data_type":"3SIMG_L1B_STD", 
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "filename":"SGP",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL1BSTD4km/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L1B_STD_V01R00.h5", 
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L1B_STD_V01R00.h5", 
+                                    "params": { "LAYERS": "IMG_WV","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/greyscale"
+                            }]
+                    },
+                         {
+                        "name": "SOUNDER",
+                        "selection_name": "SOUNDER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Sector A",
+                                "selection_name": "Sector A",
+                                "flag":true,
+                                "children": [
+                                    {
+                                        "name": "LWIR1 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 1 Count (Sector A)",
+                                        "modified_name": "Longwave Infrared 1 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR2 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 2 Count (Sector A)",
+                                        "modified_name": "Longwave Infrared 2 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR3 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR4 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 4 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR5 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 5 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR6 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 6 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR6","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "LWIR7 Count (Sec-A)",
+                                        "selection_name": "Longwave Infrared 7 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3S/3S_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_LWIR7","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR1 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 1 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR2 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 2 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR3 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR4 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 4 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "MIR5 Count (Sec-A)",
+                                        "selection_name": "Midwave Infrared 5 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_MWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR1 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 1 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR1","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR2 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 2 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR2","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR3 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 3 Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR3","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR4 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 4 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR4","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR5 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 5 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR5","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },
+                                    {
+                                        "name": "SWIR6 Count (Sec-A)",
+                                        "selection_name": "Shortwave Infrared 6 Count(Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_SWIR6","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    },			  
+                                    {
+                                        "name": "Visible Count (Sector A)",
+                                        "selection_name": "Visible Count (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite", 
+                                        "sub_data_type":"3SSND_L1B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "filename":"L1B_SA1",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L1B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L1B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "SND_VIS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/greyscale"
+                                    }]
+                            } 
+                        ]
+                    }
+                    
+                    ]}]
+    },
+    {
+        "name": "Geophysical Parameters",
+        "selection_name": "Geophysical Parameters",
+        "flag":true,
+        "root":"yes",
+        "children": [
+               {
+                "name": "INSAT3S",
+                "selection_name": "INSAT3S",
+                "flag":true,
+                "children": [
+                    {
+                        "name": "IMAGER",
+                        "selection_name": "IMAGER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Sea Surface Temperature",
+                                "selection_name": "Sea Surface Temperature",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2B_SST",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL2BSST/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2B_SST_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2B_SST_V01R00.h5", 
+                                    "params": { "LAYERS": "SST_VAR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/rainbow",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Land Surface Temperature",
+                                "selection_name": "Land Surface Temperature",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2B_LST",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL2BLST/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2B_LST_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2B_LST_V01R00.h5", 
+                                    "params": { "LAYERS": "LST","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_lst",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Outgoing Longwave Radiation",
+                                "selection_name": "Outgoing Longwave Radiation",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2B_OLR",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL2BOLR/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2B_OLR_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2B_OLR_V01R00.h5", 
+                                    "params": { "LAYERS": "OLR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_olr",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Hydro Estimator Rainfall",
+                                "selection_name": "Hydro Estimator Rainfall",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2B_HEM",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3SL2BHEM/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2B_HEM_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2B_HEM_V01R00.h5", 
+                                    "params": { "LAYERS": "HEM","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_hem",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Cloud Optical Thickness",
+                                "selection_name": "Cloud Optical Thickness",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2C_CMP",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_CMP_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2C_CMP_V01R00.h5", 
+                                    "params": { "LAYERS": "COT","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Cloud Particle Effective Radius",
+                                "selection_name": "Cloud Particle Effective Radius",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2C_CMP",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_CMP_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2C_CMP_V01R00.h5", 
+                                    "params": { "LAYERS": "CER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Insolation",
+                                "selection_name": "Insolation",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2C_INS",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_INS_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2C_INS_V01R00.h5", 
+                                    "params": { "LAYERS": "INS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_insol",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "INSAT Multispectral Rainfall",
+                                "selection_name": "INSAT Multispectral Rainfall",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2G_IMR",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2G_IMR_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2G_IMR_V01R00.h5", 
+                                    "params": { "LAYERS": "IMR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_imr",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Aerosol Optical Depth",
+                                "selection_name": "Aerosol Optical Depth",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2G_AOD",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2G_AOD_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2G_AOD_V01R00.h5", 
+                                    "params": { "LAYERS": "AOD","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/rainbow",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Fog",
+                                "selection_name": "Fog",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2C_FOG",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_FOG_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2C_FOG_V01R00.h5", 
+                                    "params": { "LAYERS": "FOG","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_fog",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Snow",
+                                "selection_name": "Snow",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2C_SNW",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_SNW_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2C_SNW_V01R00.h5", 
+                                    "params": { "LAYERS": "SNW","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_snw",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "GPI",
+                                "selection_name": "GPI",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L2G_GPI",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2G_GPI_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L2G_GPI_V01R00.h5", 
+                                    "params": { "LAYERS": "GPI","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_qpe",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Daily GPI",
+                                "selection_name": "Daily GPI",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L3G_GPI_DLY",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L3G_GPI_DLY_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L3G_GPI_DLY_V01R00.h5", 
+                                    "params": { "LAYERS": "GPI_DLY","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_qpe",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Daily IMR",
+                                "selection_name": "Daily IMR",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3SIMG_L3G_IMR_DLY",
+                                "satellite":"INSAT3S",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L3G_IMR_DLY_V01R00.h5",
+                                    "urlfileprefix": "3SIMG_", 
+                                    "urlfilesuffix": "_L3G_IMR_DLY_V01R00.h5", 
+                                    "params": { "LAYERS": "IMR_DLY","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_imr",
+                                "param_type":"geophysical"
+                            }
+                            ]
+                    },
+                       {
+                        "name": "SOUNDER",
+                        "selection_name": "SOUNDER",
+                        "flag":true,
+                        "children": [
+                            { 
+                                "name": "Sector A",
+                                "selection_name": "Sector A",
+                                "flag":true,
+                                "children": [
+                                    {
+                                        "name": "L1 Prec Water(1000-900mb) (Sector A)",
+                                        "selection_name": "L1 Prec Water(1000-900mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L1_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "L2 Prec Water(900-700mb) (Sector A)",
+                                        "selection_name": "L2 Prec Water(900-700mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L2_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "L3 Prec Water(700-300mb) (Sector A)",
+                                        "selection_name": "L3 Prec Water(700-300mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L3_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "Lifted Index (Sector A)",
+                                        "selection_name": "Lifted Index (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "LI","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+				    {
+                                        "name": "TAirPhy (Sector A)",
+                                        "selection_name": "TAirPhy (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS",
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_",
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5",
+                                            "params": { "LAYERS": "TAirPhy","VERSION": "1.1.1","FORMAT": "image/png","ELEVATION":"0.1000" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "Total Precipitable Water Vapor (Sector A)",
+                                        "selection_name": "Total Precipitable Water Vapor (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3SSND_L2B_SA1",
+                                        "satellite":"INSAT3S",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3SSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3SSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "totH2O","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    }]}
+                        ]
+                    }
+                    ]},
+            {
+                "name": "INSAT3R",
+                "selection_name": "INSAT3R",
+                "flag":true,
+                "children": [
+                    {
+                        "name": "IMAGER",
+                        "selection_name": "IMAGER",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Sea Surface Temperature",
+                                "selection_name": "Sea Surface Temperature",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2B_SST",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL2BSST/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2B_SST_V02R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2B_SST_V02R00.h5", 
+                                    "params": { "LAYERS": "SST","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_sst",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Land Surface Temperature",
+                                "selection_name": "Land Surface Temperature",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2B_LST",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL2BLST/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2B_LST_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2B_LST_V01R00.h5", 
+                                    "params": { "LAYERS": "LST","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_lst",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Outgoing Longwave Radiation",
+                                "selection_name": "Outgoing Longwave Radiation",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2B_OLR",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL2BOLR/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2B_OLR_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2B_OLR_V01R00.h5", 
+                                    "params": { "LAYERS": "OLR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_olr",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Hydro Estimator Rainfall",
+                                "selection_name": "Hydro Estimator Rainfall",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2B_HEM",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/live3RL2BHEM/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2B_HEM_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2B_HEM_V01R00.h5", 
+                                    "params": { "LAYERS": "HEM","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_hem",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Cloud Optical Thickness",
+                                "selection_name": "Cloud Optical Thickness",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2C_CMP",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2C_CMP_V02R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2C_CMP_V02R00.h5", 
+                                    "params": { "LAYERS": "COT","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Cloud Particle Effective Radius",
+                                "selection_name": "Cloud Particle Effective Radius",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2C_CMP",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/",
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2C_CMP_V02R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2C_CMP_V02R00.h5", 
+                                    "params": { "LAYERS": "CER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Insolation",
+                                "selection_name": "Insolation",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2C_INS",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2C_INS_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2C_INS_V01R00.h5", 
+                                    "params": { "LAYERS": "INS","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_insol",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "INSAT Multispectral Rainfall",
+                                "selection_name": "INSAT Multispectral Rainfall",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2G_IMR",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2G_IMR_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2G_IMR_V01R00.h5", 
+                                    "params": { "LAYERS": "IMR","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_imr",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Aerosol Optical Depth",
+                                "selection_name": "Aerosol Optical Depth",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2G_AOD",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2G_AOD_V02R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2G_AOD_V02R00.h5", 
+                                    "params": { "LAYERS": "AOD","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/rainbow",
+                                "param_type":"geophysical"
+                            },
+			    {
+                                "name": "Fog",
+                                "selection_name": "Fog",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2C_FOG",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS",
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/",
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2C_FOG_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_",
+                                    "urlfilesuffix": "_L2C_FOG_V01R00.h5",
+                                    "params": { "LAYERS": "FOG","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_fog",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Snow",
+                                "selection_name": "Snow",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2C_SNW",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2C_SNW_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2C_SNW_V01R00.h5", 
+                                    "params": { "LAYERS": "SNW","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_snw",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "GPI",
+                                "selection_name": "GPI",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L2G_GPI",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L2G_GPI_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L2G_GPI_V01R00.h5", 
+                                    "params": { "LAYERS": "GPI","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_qpe",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Daily GPI",
+                                "selection_name": "Daily GPI",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L3G_GPI_DLY",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L3G_GPI_DLY_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L3G_GPI_DLY_V01R00.h5", 
+                                    "params": { "LAYERS": "GPI_DLY","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_qpe",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Daily IMR",
+                                "selection_name": "Daily IMR",
+                                "flag":true,
+                                "data_type":"satellite",
+                                "sub_data_type":"3RIMG_L3G_IMR_DLY",
+                                "satellite":"INSAT3R",
+                                "sensor":"Imager",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_IMG/", 
+                                    "urlaggregation": "/live_data/wms/testArchive/3RIMG_AGG_L3G_IMR_DLY_V01R00.h5",
+                                    "urlfileprefix": "3RIMG_", 
+                                    "urlfilesuffix": "_L3G_IMR_DLY_V01R00.h5", 
+                                    "params": { "LAYERS": "IMR_DLY","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "showLegendVar":false,
+                                "style":"boxfill/insat_imr",
+                                "param_type":"geophysical"
+                            }]
+                    },
+                    {
+                        "name": "SOUNDER",
+                        "selection_name": "SOUNDER",
+                        "flag":true,
+                        "children": [
+                            { 
+                                "name": "Sector A",
+                                "selection_name": "Sector A",
+                                "flag":true,
+                                "children": [
+                                    {
+                                        "name": "L1 Prec Water(1000-900mb) (Sector A)",
+                                        "selection_name": "L1 Prec Water(1000-900mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L1_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "L2 Prec Water(900-700mb) (Sector A)",
+                                        "selection_name": "L2 Prec Water(900-700mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L2_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "L3 Prec Water(700-300mb) (Sector A)",
+                                        "selection_name": "L3 Prec Water(700-300mb) (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "L3_PREC_WATER","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "Lifted Index (Sector A)",
+                                        "selection_name": "Lifted Index (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "LI","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+				    {
+                                        "name": "TAirPhy (Sector A)",
+                                        "selection_name": "TAirPhy (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS",
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/",
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_",
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5",
+                                            "params": { "LAYERS": "TAirPhy","VERSION": "1.1.1","FORMAT": "image/png","ELEVATION":"0.100" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    },
+                                    {
+                                        "name": "Total Precipitable Water Vapor (Sector A)",
+                                        "selection_name": "Total Precipitable Water Vapor (Sector A)",
+                                        "flag":true,
+                                        "data_type":"satellite",
+                                        "sub_data_type":"3RSND_L2B_SA1",
+                                        "satellite":"INSAT3R",
+                                        "sensor":"Sounder",
+                                        "active":true,
+                                        "opacity":"0.5",
+                                        "source": {
+                                            "type": "TileWMS", 
+                                            "urlprefix": "/live_data/wms/liveNew/products/Insat3r/3R_SND/", 
+                                            "urlaggregation": "/live_data/wms/testArchive/3RSND_AGG_L2B_SA1_V01R00.h5",
+                                            "urlfileprefix": "3RSND_", 
+                                            "urlfilesuffix": "_L2B_SA1_V01R00.h5", 
+                                            "params": { "LAYERS": "totH2O","VERSION": "1.1.1","FORMAT": "image/png" }
+                                        },
+                                        "showLegendVar":false,
+                                        "style":"boxfill/rainbow",
+                                        "param_type":"geophysical"
+                                    }]}
+                        ]
+                    }]},
+            {
+                "name": "EOS-06",
+                "selection_name": "EOS-06",
+                "flag":true,
+                "children": [
+                    {
+                        "name": "SCAT",
+                        "selection_name": "SCAT",
+                        "flag":true,
+						"children": [
+						{
+						"name": "25km resolution",
+                        "selection_name": "25km resolution",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Analyzed Winds",
+                                "selection_name": "Analyzed Winds",
+                                "flag":true,
+                                "units": "m/s",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+				    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/EOS06SCAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "analyzed_wind_speed","layers_x":"eastward_analyzed_wind_speed","layers_y":"northward_analyzed_wind_speed","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"vector/rainbow",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Observed Winds",
+                                "selection_name": "Observed Winds",
+                                "flag":true,
+                                "units": "m/s",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "observed_wind_speed","layers_x":"eastward_observed_wind_speed","layers_y":"northward_observed_wind_speed","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"vector/rainbow",
+                                "param_type":"geophysical"
+                            },			  
+                            {
+                                "name": "Error Winds",
+                                "selection_name": "Error Winds",
+                                "flag":true,
+                                "units": "m/s",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "error_wind_speed","layers_x":"eastward_error_wind_speed","layers_y":"northward_error_wind_speed","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"vector/rainbow",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Wind Stress",
+                                "selection_name": "Wind Stress",
+                                "flag":true,
+                                "units": "Pa",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "analyzed_wind_stress","layers_x":"eastward_analyzed_wind_stress","layers_y":"northward_analyzed_wind_stress","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"vector/rainbow",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Analyzed Wind Divergence",
+                                "selection_name": "Analyzed Wind Divergence",
+                                "flag":true,
+                                "units": "/s", 
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "DIVG","layers_x":"","layers_y":"","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Analyzed Wind Stress curl",
+                                "selection_name": "Analyzed Wind Stress curl",
+                                "flag":true,
+                                "units": "Pa/m",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "CURL","layers_x":"","layers_y":"","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Analyzed Latent Heat Flux",
+                                "selection_name": "Analyzed Latent Heat Flux",
+                                "flag":true,
+                                "units": "W/m^2",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "QLH","layers_x":"","layers_y":"","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            },
+                            {
+                                "name": "Analyzed Sensible Heat Flux",
+                                "selection_name": "Analyzed Sensible Heat Flux",
+                                "flag":true,
+                                "units": "W/m^2",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind/",
+                                    "urlsuffix":"L4AW",
+                                    "urlfileprefix": "E06SCTL4AW_",
+                                    "urlfilesuffix": "_25km_v1.0.5.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AW.nc",
+                                    "params": { "LAYERS": "QSH","layers_x":"","layers_y":"","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV25",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"boxfill/jet",
+                                "param_type":"geophysical"
+                            }
+                        ]},
+                        	{
+						"name": "Wind 6hourly ",
+                        "selection_name": "Wind 6hourly",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Analyzed Winds",
+                                "selection_name": "Analyzed Winds",
+                                "flag":true,
+                                "units": "m/s",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"analyzed_winds",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS", 
+                                    "urlprefix":"/live_data/wms/liveNewScatAnalyzedWind6hr/",
+                                    "urlsuffix":"L4AH",
+                                    "urlfileprefix": "E06SCTL4AH_",
+                                    "urlfilesuffix": "_25km_v1.0.0.nc",
+                                    "url_analyzed_winds_suffix":".nc",									
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4AH.nc",
+                                    "params": { "LAYERS": "analyzed_wind_speed","layers_x":"eastward_analyzed_wind_speed","layers_y":"northward_analyzed_wind_speed","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_AWV6HOURLY",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"vector/rainbow",
+                                "param_type":"geophysical"
+                            }                        
+                            ]},
+			    {
+                        "name": "L4 Upwelling Index",
+                        "selection_name": "L4 Upwelling Index",
+                        "flag":true,
+                        "children": [
+                            {
+                                "name": "Upwelling Index",
+                                "selection_name": "Upwelling Index",
+                                "flag":true,
+                                "units": "",
+                                "data_type":"geophysical_analyzed_winds",
+                                "sub_data_type":"upwelling_index",
+                                "satellite":"EOS-06",
+                                "sensor":"SCAT",
+                                "active":true,
+                                "opacity":"0.5",
+                                "source": {
+                                    "type": "TileWMS",
+                                    "urlprefix":"/live_data/wms/liveNew/products/EOS06/SCAT/SCIENCE_PRODUCTS/",
+                                    "urlsuffix":"L4UI",
+                                    "urlfileprefix": "E06SCTL4UI_",
+                                    "urlfilesuffix": "_25km_v1.0.4.nc",
+                                    "url_analyzed_winds_suffix":".nc",
+                                    "urlaggregation": "/live_data/wms/testArchive/SCATSAT_AGG_L4UI.nc",
+                                    "params": { "LAYERS": "Upwelling_index","VERSION": "1.1.1","FORMAT": "image/png" }
+                                },
+                                "database_query_file_prefix":"E06SCT_L4_UI",
+                                "database_query_file_extension":"",
+                                "showLegendVar":false,
+                                "style":"boxfill/rainbow",
+                                "param_type":"geophysical"
+                            }
+                        ]}
+						
+			]
+                    },
+   	            {
+
+                    	"name": "OCM",
+                        "selection_name": "OCM",
+                        "flag":true,
+			"children": [
+				{
+                                        "name": "AOD(Land)",
+                                        "selection_name": "Aerosol Optical Depth(Land)",
+                                        "flag":true,
+                                        "units": "",
+                                        "data_type":"ocm_data",
+                                        "sub_data_type":"Aerosol Optical Depth",
+                                        "satellite":"EOS-06",
+                                        "sensor":"OCM",
+                                        "active":true,
+                                         "opacity":"0.7",
+                                        "source": {
+                                            "type": "TileWMS",
+                                            "urlprefix":"/live_data/wms/liveNew/products/EOS06/OCM/SCIENCE_PRODUCTS/",
+                                            "urlsuffix":"L3AD",
+                                            "urlfileprefix": "E06OCML3AD_",
+                                            "urlfilesuffix": "01km_LAC_v1.0.0.nc",
+                                            "urlaggregation": "",
+                                            "params": { "LAYERS": "AOD","VERSION": "1.3.0","FORMAT": "image/png","STYLES": "boxfill/ocm_aod",
+                                                "COLORSCALERANGE": "" }
+                                        },
+                                        "database_query_file_prefix":"E06OCM_L3C_LAC_AD",
+                                        "database_query_file_extension":"",
+                                        "showLegendVar":false,
+                                        "style":"boxfill/ocm_aod",
+                                        "param_type":"geophysical"
+                                 },
+                        	 {
+					"name": "Chlorophill",
+	                                "selection_name": "Chlorophill",
+        	                        "flag":true,
+                	                "units": "rad.",
+                        	        "data_type":"ocm_data",
+	                                "sub_data_type":"Chlorophill",
+        	                        "satellite":"EOS-06",
+                	                "sensor":"OCM",
+                        	        "active":true,
+                               		 "opacity":"0.5",
+	                                "source": {
+        	                            "type": "TileWMS",
+                	                    "urlprefix":"/live_data/wms/liveNew/products/EOS06/OCM/SCIENCE_PRODUCTS/",
+                        	            "urlsuffix":"L4AC",
+                                	    "urlfileprefix": "E06OCML4AC_",
+	                                    "urlfilesuffix": "25km_v1.0.1.nc",
+                	                    "urlaggregation": "",
+                        	            "params": { "LAYERS": "chla","VERSION": "1.3.0","FORMAT": "image/png","STYLES": "boxfill/rainbow",
+		                                "COLORSCALERANGE": "0.00,3.90" }
+ 					}, 
+                        	        "database_query_file_prefix":"E06OCM_L4_AC",
+                                	"database_query_file_extension":"",
+	                                "showLegendVar":false,
+        	                        "style":"boxfill/rainbow",
+                	                "param_type":"geophysical"
+                          
+           			}
+
+			]
+		    }
+                ]}
+																						
+        ]}
+]

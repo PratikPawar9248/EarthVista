@@ -1,0 +1,28 @@
+
+[
+   {
+    "name": "boxfill/greyscale",
+    "displayname":"Greyscale"
+    },
+    {
+        "name":"boxfill/redblue",
+        "displayname":"Redblue"
+    },
+    {
+        "name":"boxfill/rainbow",
+        "displayname":"Rainbow"
+    },
+    {
+        "name":"boxfill/sst_36",
+        "displayname":"SST_36"
+    },
+    {
+        "name":"boxfill/ferret",
+        "displayname":"Ferret"
+    },
+    {
+        "name":"boxfill/nhc",
+        "displayname":"NHC"
+    }
+
+]

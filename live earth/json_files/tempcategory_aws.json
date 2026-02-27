@@ -1,0 +1,21 @@
+[
+{
+"basicname":"AWS",
+"name":"AWS",
+"displayname":"AWS",
+"active":true,
+"recent":true,
+"dateval":"20160302",
+"timeval":"1830",
+"recentdate":"20170302",
+"recenttime":"2030",
+"source": {
+"type": "ImageWMS",
+"urlaws": "http://localhost:8081/geoserver/forecast_alert_india/wms",
+"opacity":0,
+ "clusterSource":"clusterSource",
+"vectorSource":"vectorSource"
+},
+"showLegendVar":false
+}
+]

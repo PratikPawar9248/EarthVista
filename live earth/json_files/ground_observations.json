@@ -1,0 +1,93 @@
+
+[
+    {
+        "name": "AWS",
+        "flag":true,
+        "children": [
+            {
+                "name": "All_station",
+                "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+           },
+            {
+                "name": "Temperature",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+                 
+            },
+            {
+                "name": "Pressure",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+               
+                  
+            },
+            {
+                "name": "Humidity",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+               
+            },
+            {
+                "name": "Rainfall",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+                
+            },
+            {
+                "name": "Sunshine",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+               
+            },
+            {
+                "name": "Stations",
+                 "station":"AWS",
+                "flag":true,
+                "source": {
+                    "type": "GeoJson",
+                    "urlaws": "https://localhost:8081/geoserver/forecast_alert_india/wms",
+                    "clusterSource":"clusterSource",
+                    "vectorSource":"vectorSource"
+                }
+               
+            }
+        ]
+    }
+]

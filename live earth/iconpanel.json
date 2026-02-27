@@ -1,0 +1,106 @@
+[
+    {
+        "name":"wind", 
+        "tooltip":"Wind (Forecast)",
+        "active":false,
+        "label":"",
+        "labelfor":"windlabel",
+        "image":"wind.png",
+        "eventname":"handleWinds"
+    },
+    {
+        "name":"fire-smoke", 
+        "tooltip":"Fire & Smoke (Current)",
+        "active":false,
+        "label":"",
+        "labelfor":"firesmokelabel",
+        "image":"fire-smoke-icon_new.png",
+        "eventname":"handleFireSmoke"
+    },
+    {
+        "name":"cloudburst", 
+        "tooltip":"Cloudburst/HeavyRain",
+        "active":false,
+        "label":"",
+        "labelfor":"cloudburst",
+        "image":"cloud-burst-icon.png",
+        "eventname":"handleCloudBurst"
+    },
+    {
+        "name":"ripcurrent", 
+        "tooltip":"Rip Current (Forecast)",
+        "active":false,
+        "label":"",
+        "labelfor":"ripcurrent",
+        "image":"rip-icon.png",
+        "eventname":"handleRipCurrent",
+        "source":{
+            "goabeachurl":"/geoserver_2/beach/wms",
+            "opacity":0.6,
+            "params": {"layerview":"beach:india_beaches_view",
+                        "layerplace":"beach:beaches_India"}
+        }
+    },
+    {
+        "name":"Temperature", 
+        "tooltip":"Temperature",
+        "quick_access":false,
+        "label":"",
+        "labelfor":"Temperature",
+        "image":"heat_cold_icon.png",
+        "eventname":"handleHeatColdWave",
+        "source":{
+            "hcwaveurl":"/geoserver_2/heat_popup/wms",
+            "opacity":0.6,
+            "params": {"layer24":"heat_popup:FCST24",
+                        "layer48":"heat_popup:FCST48"}
+        },
+        "parameter_name": "Temperature",
+        "path":"get_paramameters_oracle.php",
+        "clusterSource":{ "distance":"40"},
+        "style":
+        {
+            "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+            "text":{"text":"","fill":{"color":"#fff"}}
+        },
+        "cluster":{"name":"Temperature"}
+    },
+    {
+    "name": "snow",
+    "selection_name": "Snow",
+    "tooltip":"Snow",
+    "active":false,
+    "label":"",
+    "labelfor":"snow",
+    "image":"snow-icon.png",
+    "eventname":"handleSnow",
+    "flag":true,
+    "satellite":"INSAT3S",
+    "sensor":"Imager",
+    "opacity":"0.5",
+    "source": {
+        "type": "TileWMS", 
+        "urlprefix": "/live_data/wms/liveNew/products/Insat3s/3S_IMG/", 
+        "urlaggregation": "/live_data/wms/testArchive/3SIMG_AGG_L2C_SNW_V01R00.h5",
+        "urlfileprefix": "3SIMG_", 
+        "urlfilesuffix": "_L2C_SNW_V01R00.h5?", 
+        "params": {
+            "LAYERS": "SNW",
+            "VERSION": "1.1.1",
+            "FORMAT": "image/png"
+        }
+    },
+    "showLegendVar":false,
+    "style":"boxfill/insat_snw",
+    "selection_type":"sidemenu"
+},
+{
+        "name":"cyclone_track", 
+        "tooltip":"Cyclone Track",
+        "active":false,
+        "label":"",
+        "labelfor":"cyclone_track",
+        "image":"cyclone-icon.png",
+        "eventname":"handlecyclonetrack"
+}      
+]

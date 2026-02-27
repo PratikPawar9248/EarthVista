@@ -1,0 +1,117 @@
+
+
+ul.navigation_listing li {
+  list-style-type: none;
+  padding-left:20px;  
+  padding-left:10px; 
+  color: whitesmoke;   
+  }
+    
+/*====================Update Starts By Jay On 27DEC2019====================*/  
+  
+ul.navigation_listing li ul{  
+	padding-inline-start: 5px;
+}
+
+/*====================Update Ends By Jay On 27DEC2019====================*/
+  
+/* ul.navigation_listing li.collapsed
+ {
+     color:yellow;
+ }
+  */
+  
+ ul.navigation_listing li.active
+ {
+     color:#FF4081;
+ }
+  
+.collapsed ul {
+  display: none;
+  
+}
+
+li:before{
+     content: "-";
+     display: inline-block;
+     width: 10px;
+     
+  }    
+li.collapsed:before {
+  content: '+';
+  display: inline-block;
+  width: 10px;
+  
+} 
+
+/*li.collapsed:a{
+ color: yellowgreen;   
+ background-color: blue;   
+}
+*/
+
+/* 
+ul.navigation_listing li a:hover {
+
+ cursor: pointer; 
+ background-color: yellow;
+  color:green;
+}
+
+ul a:hover {
+
+ cursor: pointer; 
+ background-color: yellow;
+  color:green;
+}
+
+.selected li
+{
+ background-color:red;
+ color:blue;
+}
+
+.selected ul
+{
+ background-color:red;
+ color:blue;
+}
+
+
+
+
+
+
+
+ul.navigation li {
+    background: #f6f6f6;
+    padding: 10px;
+    margin: 2px 0;
+    display:block;
+    cursor: pointer;
+}
+ul.navigation li.active {
+    background: blue;
+    color: #f6f6f6;
+    display: block;
+    padding: 10px;
+}
+.highlightOne {
+    background: orange;
+    font-size: 125%;
+    margin: 5px;
+    padding: 5px;
+}
+.navigation {
+    display: block;
+    background: #666;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+}
+p {
+    margin: 10px 0 20px;
+}
+
+
+*/

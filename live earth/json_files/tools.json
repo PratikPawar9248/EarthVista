@@ -1,0 +1,29 @@
+
+ [
+      {
+        "name": "Basic Tools",
+        "flag":true,
+        "children": [
+          {
+            "name": "Point Probing",
+             "flag":true 
+          },
+		  {
+            "name": "Animation",
+             "flag":true 
+          },
+		  {
+            "name": "Timeseries",
+             "flag":true 
+          },
+		  {
+            "name": "Swipe",
+             "flag":true 
+          },
+		   {
+            "name": "Measure",
+             "flag":true 
+          }
+		  ]
+	}
+]

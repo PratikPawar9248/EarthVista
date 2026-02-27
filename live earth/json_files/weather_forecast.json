@@ -1,0 +1,332 @@
+[
+    {
+        "name": "WRF",
+        "selection_name": "WRF",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "WRF Temperature",
+                "selection_name": "Temperature",
+                "units":"K",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRF",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "t2","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                "data_type":"weather_forecast"
+            },
+            {
+                "name": "WRF SFC Pressure",
+                "selection_name": "Surface Pressure (Pa)",
+                "units":"Pa",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRF",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "psfc","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                 "data_type":"weather_forecast",
+                "style":"boxfill/rainbow"
+            },
+            {
+                "name": "WRF ACCUMULATED TOTAL GRID SCALE PRECIPITATION (mm)",
+                "selection_name": "ACCUMULATED TOTAL GRID SCALE PRECIPITATION (mm)",
+                "units":"mm",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRF",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "rainnc","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+            {
+                "name": "WRF ACCUMULATED TOTAL CUMULUS PRECIPITATION (mm)",
+                "selection_name": "ACCUMULATED TOTAL CUMULUS PRECIPITATION (mm)",
+                "units":"mm",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRF",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "rainc","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+             {
+                "name": "WRF Relative Humidity at 2m (%)",
+                "selection_name": "Relative Humidity at 2m (%)",
+                "units":"%",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRF",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "rh2","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            }
+        ]
+    },
+   
+	{
+        "name": "WRF Multilayer",
+        "selection_name": "WRF Multilayer",
+        "flag":true,
+        "root":"yes",
+        "children": [     
+            {
+                "name": "WRF Temperature",
+                "selection_name": "Temperature",
+                "units":"deg C",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRFML",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "tc","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "WRF Dew Point Temperature",
+                "selection_name": "Dew Point Temperature",
+                "units":"deg C",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"WRFML",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/WRFOUT/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "td","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            }
+			]
+   },
+	{
+	 "name": "Ocean",
+        "selection_name": "Ocean",
+        "flag":true,
+        "root":"yes",
+        "children": [ 
+		{
+          "name": "Circulation",
+          "selection_name": "Circulation",
+          "flag":true,
+          "root":"yes",
+          "children": [ 
+{
+                "name": "Salinity",
+                "selection_name": "Salinity",
+                "units":"psu",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Circulation",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/CIRC/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "salinity","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },    
+            {
+                "name": "Potential Temperature",
+                "selection_name": "Potential Temperature",
+                "units":"deg C",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Circulation",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/CIRC/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "temp","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+           }
+        ]
+    },
+		{
+          "name": "Wave",
+          "selection_name": "Wave",
+          "flag":true,
+          "root":"yes",
+          "children": [ 
+           {
+                "name": "SWH",
+                "selection_name": "SWH",
+                "units":"m",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "SWH","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "Mean Wave Direction",
+                "selection_name": "Mean Wave Direction",
+                "units":"rad.",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "MWDIR","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "Primary Swell Wave Height",
+                "selection_name": "Primary Swell Wave Height",
+                "units":"m",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "HS01","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "Primary Swell Mean Direction",
+                "selection_name": "Primary Swell Mean Direction",
+                "units":"rad.",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "DIR01","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "Secondary Swell Wave Height",
+                "selection_name": "Secondary Swell Wave Height",
+                "units":"m",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "HS02","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+			 {
+                "name": "Secondary Swell Mean Direction",
+                "selection_name": "Secondary Swell Mean Direction",
+                "units":"rad.",
+                "flag":true,
+                "satellite":"Forecast",
+                "sensor":"OSF_Wave",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                    "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OSF/WAVE/",
+                    "urlweather_forecast_suffix":".nc",
+                    "params": { "LAYERS": "DIR02","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            }
+        ]
+    }
+
+   ]
+ }
+
+]
+	
+            

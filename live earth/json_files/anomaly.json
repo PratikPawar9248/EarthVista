@@ -1,0 +1,77 @@
+[     
+            {
+                "name": "Land Analysis",
+                "selection_name": "Land Analysis",
+                "units":"K",
+                "flag":true,
+                "root":"yes",
+                "children":[]
+            },
+             {
+                "name": "Ocean Analysis",
+                "selection_name": "Ocean Analysis",
+                "units":"K",
+                "flag":true,
+                "root":"yes",
+                "children":[
+                  {
+                "name": "Density Anomaly",
+                "selection_name": "Density Anomaly",
+                "units":"Kg/cubic meter",
+                "flag":true,
+                "satellite":"Ocean",
+                "sensor":"Anomaly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OCEAN_TEST/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "density_anomaly","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+               {
+                "name": "Zonal Current Anomaly",
+                "selection_name": "Zonal Current Anomaly",
+                "units":"cm/s",
+                "flag":true,
+                "satellite":"Ocean",
+                "sensor":"Anomaly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OCEAN_TEST/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "U_anomaly","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            },
+               {
+                "name": "Meridional Current Anomaly",
+                "selection_name": "Meridional Current Anomaly",
+                "units":"cm/s",
+                "flag":true,
+                "satellite":"Ocean",
+                "sensor":"Anomaly",
+                "active":true,
+                "opacity":"0.5",
+                "source": {
+                    "type": "TileWMS", 
+                     "urlweather_forecast": "/live_data/wms/liveNew/products/FORECAST/OCEAN_TEST/",
+                    "urlweather_forecast_suffix":".nc", 
+                    "params": { "LAYERS": "V_anomaly","VERSION": "1.1.1","FORMAT": "image/png" }
+                },
+                "showLegendVar":false,
+                "style":"boxfill/rainbow",
+                 "data_type":"weather_forecast"
+            }
+                ]
+            } 
+        ]
+

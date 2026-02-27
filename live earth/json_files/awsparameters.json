@@ -1,0 +1,68 @@
+[
+{
+    "parameter_name": "All_station",
+    "path":"aws_station_oracle.php",
+    "clusterSource":{"distance":"40"},
+     "style":
+         {
+         "image":{"radius":"6", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":""}}
+         },
+     "cluster":{"name":"AWS_ISRO"}
+},
+{
+  "parameter_name": "Temperature",
+    "path":"get_paramameters_oracle.php",
+    "clusterSource":{ "distance":"40"},
+     "style":
+         {
+        "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":"#fff"}}
+         },
+     "cluster":{"name":"Temperature"}
+},
+{
+    "parameter_name": "Pressure",
+    "path":"get_paramameters_oracle.php",
+    "clusterSource":{ "distance":"40"},
+     "style":
+         {
+         "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":"#fff"}}
+         },
+       "cluster":{"name":"pressure"}
+},
+{
+  "parameter_name": "Humidity",
+    "path":"get_paramameters_oracle.php",
+    "clusterSource":{ "distance":"40"},
+     "style":
+         {
+        "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":"#fff"}}
+         },
+      "cluster":{"name":"Humidity"}    
+},
+{
+  "parameter_name": "Rainfall",
+    "path":"get_paramameters_oracle.php",
+    "clusterSource":{ "distance":"40"},
+     "style":
+         {
+        "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":"#fff"}}
+         },
+          "cluster":{"name":"Rainfall"}
+},
+{
+  "parameter_name": "Sunshine",
+    "path":"get_paramameters_oracle.php",
+    "clusterSource":{ "distance":"40"},
+     "style":
+         {
+        "image":{"radius":"8", "stroke": { "color":"white"},"fill": {"color":"green"}},
+         "text":{"text":"","fill":{"color":"#fff"}}
+         },
+          "cluster":{"name":"Sunshine"}
+}
+]

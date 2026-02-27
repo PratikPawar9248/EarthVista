@@ -1,0 +1,955 @@
+/* stylelint-disable */
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Vibrant Colorful Theme - Light Mode */
+    --background: 250 100% 98%;
+    --foreground: 260 80% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 260 80% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 80% 15%;
+    /* Vibrant Purple-Blue Primary */
+    --primary: 260 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 260 90% 70%;
+    /* Electric Cyan Secondary */
+    --secondary: 190 95% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 190 100% 65%;
+    /* Soft Muted */
+    --muted: 250 30% 95%;
+    --muted-foreground: 260 20% 50%;
+    /* Vibrant Pink Accent */
+    --accent: 320 90% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 320 95% 75%;
+    /* Success Green */
+    --success: 145 80% 50%;
+    --success-foreground: 0 0% 100%;
+    /* Warning Orange */
+    --warning: 35 95% 60%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 90% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 30% 90%;
+    --input: 250 30% 92%;
+    --ring: 260 85% 55%;
+    /* Vibrant Chart Colors */
+    --chart-1: 260 85% 55%;
+    --chart-2: 190 95% 50%;
+    --chart-3: 320 90% 60%;
+    --chart-4: 145 80% 50%;
+    --chart-5: 35 95% 60%;
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 260 80% 15%;
+    --sidebar-primary: 260 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 30% 95%;
+    --sidebar-accent-foreground: 260 80% 15%;
+    --sidebar-border: 250 30% 90%;
+    --sidebar-ring: 260 85% 55%;
+    
+    /* Gradient Definitions */
+    --gradient-primary: linear-gradient(135deg, hsl(260 85% 55%), hsl(260 90% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(190 95% 50%), hsl(190 100% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(320 90% 60%), hsl(320 95% 75%));
+    --gradient-rainbow: linear-gradient(135deg, hsl(260 85% 55%), hsl(190 95% 50%), hsl(320 90% 60%));
+    --gradient-mesh: radial-gradient(at 0% 0%, hsl(260 85% 55% / 0.3) 0px, transparent 50%),
+                     radial-gradient(at 100% 0%, hsl(190 95% 50% / 0.3) 0px, transparent 50%),
+                     radial-gradient(at 100% 100%, hsl(320 90% 60% / 0.3) 0px, transparent 50%),
+                     radial-gradient(at 0% 100%, hsl(145 80% 50% / 0.3) 0px, transparent 50%);
+    
+    /* Shadow Definitions */
+    --shadow-glow-primary: 0 0 30px hsl(260 85% 55% / 0.4);
+    --shadow-glow-secondary: 0 0 30px hsl(190 95% 50% / 0.4);
+    --shadow-glow-accent: 0 0 30px hsl(320 90% 60% / 0.4);
+    --shadow-elegant: 0 10px 40px -10px hsl(260 85% 55% / 0.3);
+  }
+
+  .dark {
+    /* ISRO Theme - Deep Space Blue with Saffron Orange */
+    --background: 215 50% 6%;
+    --foreground: 0 0% 98%;
+    --card: 215 45% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 215 45% 10%;
+    --popover-foreground: 0 0% 98%;
+    /* ISRO Saffron Orange Primary */
+    --primary: 30 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 100% 70%;
+    /* ISRO Deep Blue Secondary */
+    --secondary: 215 85% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 215 90% 60%;
+    --muted: 215 35% 18%;
+    --muted-foreground: 0 0% 85%;
+    /* Gold Accent */
+    --accent: 45 95% 55%;
+    --accent-foreground: 215 50% 10%;
+    --accent-glow: 45 100% 65%;
+    /* Success Green */
+    --success: 138 70% 50%;
+    --success-foreground: 0 0% 100%;
+    /* Warning Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 35% 20%;
+    --input: 215 35% 20%;
+    --ring: 30 100% 60%;
+    /* Chart Colors (ISRO Theme) */
+    --chart-1: 30 100% 60%;
+    --chart-2: 215 85% 45%;
+    --chart-3: 45 95% 55%;
+    --chart-4: 138 70% 50%;
+    --chart-5: 200 90% 50%;
+    /* Sidebar */
+    --sidebar-background: 215 48% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 30 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 40% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 35% 18%;
+    --sidebar-ring: 30 100% 60%;
+    
+    /* Gradient Definitions (ISRO Theme) */
+    --gradient-primary: linear-gradient(135deg, hsl(30 100% 60%), hsl(30 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 85% 45%), hsl(215 90% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 95% 55%), hsl(45 100% 65%));
+    --gradient-rainbow: linear-gradient(135deg, hsl(30 100% 60%), hsl(45 95% 55%), hsl(215 85% 45%));
+    --gradient-space: radial-gradient(ellipse at top, hsl(215 70% 20% / 0.4) 0%, transparent 50%),
+                      radial-gradient(ellipse at bottom, hsl(30 80% 30% / 0.2) 0%, transparent 50%);
+    --gradient-isro: linear-gradient(180deg, hsl(215 50% 6%) 0%, hsl(215 60% 10%) 50%, hsl(30 40% 12%) 100%);
+    --gradient-mesh: radial-gradient(at 0% 0%, hsl(30 100% 60% / 0.12) 0px, transparent 50%),
+                     radial-gradient(at 100% 0%, hsl(215 85% 45% / 0.12) 0px, transparent 50%),
+                     radial-gradient(at 100% 100%, hsl(45 95% 55% / 0.12) 0px, transparent 50%),
+                     radial-gradient(at 0% 100%, hsl(215 85% 45% / 0.12) 0px, transparent 50%);
+    
+    /* Shadow Definitions (ISRO Glowing) */
+    --shadow-glow-primary: 0 0 50px hsl(30 100% 60% / 0.4);
+    --shadow-glow-secondary: 0 0 50px hsl(215 85% 45% / 0.4);
+    --shadow-glow-accent: 0 0 50px hsl(45 95% 55% / 0.4);
+    --shadow-elegant: 0 10px 60px -10px hsl(30 100% 60% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Space/Ocean Background Effect */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: 
+      radial-gradient(2px 2px at 20% 30%, white, transparent),
+      radial-gradient(2px 2px at 60% 70%, white, transparent),
+      radial-gradient(1px 1px at 50% 50%, white, transparent),
+      radial-gradient(1px 1px at 80% 10%, white, transparent),
+      radial-gradient(2px 2px at 90% 60%, white, transparent),
+      radial-gradient(1px 1px at 33% 80%, white, transparent),
+      radial-gradient(1px 1px at 15% 60%, white, transparent);
+    background-size: 200% 200%, 200% 200%, 300% 300%, 250% 250%, 200% 200%, 300% 300%, 250% 250%;
+    background-position: 0% 0%, 40% 40%, 50% 50%, 80% 10%, 90% 60%, 33% 80%, 15% 60%;
+    animation: stars 200s linear infinite;
+    opacity: 0.5;
+  }
+
+  /* Animated gradient overlay - ISRO colors */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+      radial-gradient(ellipse at top left, hsl(215 80% 20% / 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at top right, hsl(30 70% 25% / 0.2) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom, hsl(215 70% 15% / 0.4) 0%, transparent 50%);
+    animation: isroWave 20s ease-in-out infinite;
+  }
+
+  @keyframes stars {
+    0% {
+      background-position: 0% 0%, 40% 40%, 50% 50%, 80% 10%, 90% 60%, 33% 80%, 15% 60%;
+    }
+    100% {
+      background-position: 100% 100%, 140% 140%, 150% 150%, 180% 110%, 190% 160%, 133% 180%, 115% 160%;
+    }
+  }
+
+  @keyframes isroWave {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@layer utilities {
+  .leaflet-container {
+    font-family: inherit;
+    z-index: 0 !important;
+    pointer-events: auto !important;
+    cursor: grab;
+    border: none !important;
+    outline: none !important;
+  }
+  
+  .leaflet-container:active {
+    cursor: grabbing;
+  }
+  
+  .leaflet-control-zoom,
+  .leaflet-control-attribution {
+    z-index: 999 !important;
+    pointer-events: auto !important;
+  }
+  
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+  }
+  
+  .leaflet-pane {
+    pointer-events: auto !important;
+  }
+  
+  .leaflet-tile-pane {
+    pointer-events: auto !important;
+  }
+  
+  .leaflet-interactive {
+    pointer-events: auto !important;
+  }
+  
+  .leaflet-zoom-animated {
+    pointer-events: auto !important;
+  }
+
+  /* Remove any borders or outlines from map elements */
+  .leaflet-container,
+  .leaflet-container * {
+    border: none !important;
+    outline: none !important;
+  }
+
+  /* Remove border from map container */
+  #map-container {
+    border: none !important;
+    outline: none !important;
+  }
+
+  /* Restore borders only for controls that need them */
+  .leaflet-control-zoom,
+  .leaflet-control-attribution {
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  }
+
+  /* Heatmap - no animations for instant rendering */
+  .leaflet-heatmap-layer {
+    transition: none;
+  }
+  
+  .control-panel-glass {
+    background: hsl(var(--card) / 0.98);
+    backdrop-filter: blur(4px);
+    border: 1px solid hsl(var(--border) / 0.7);
+  }
+
+  @media (max-width: 1279px) {
+    .absolute.bottom-4 {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-height: 800px) {
+    .control-panel-glass .space-y-4 {
+      gap: 0.5rem;
+    }
+  }
+
+  /* Vibrant Gradient Utilities */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-rainbow {
+    background: var(--gradient-rainbow);
+  }
+
+  .gradient-mesh-bg {
+    background: var(--gradient-mesh);
+  }
+
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--shadow-glow-secondary);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-glow-accent);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Animated Gradients */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Pulse Glow Animation */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  /* Float Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Shimmer Effect */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.3) 50%,
+      transparent 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  /* Scale on Hover */
+  .hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Glow on Hover */
+  .hover-glow {
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.5);
+  }
+
+  /* Rotate Animation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-rotate {
+    animation: rotate 20s linear infinite;
+  }
+
+  /* Bounce In Animation */
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  /* Slide In From Right */
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Fade In Up */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Colorful Border Animation */
+  @keyframes border-rainbow {
+    0%, 100% {
+      border-color: hsl(260 85% 55%);
+    }
+    33% {
+      border-color: hsl(190 95% 50%);
+    }
+    66% {
+      border-color: hsl(320 90% 60%);
+    }
+  }
+
+  .animate-border-rainbow {
+    animation: border-rainbow 3s ease-in-out infinite;
+  }
+
+  /* Glass Morphism */
+  .glass-morphism {
+    background: hsl(var(--card) / 0.95);
+    backdrop-filter: blur(8px) saturate(150%);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+
+  /* Vibrant Card */
+  .vibrant-card {
+    background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+  }
+
+  .vibrant-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: var(--gradient-rainbow);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* ============================================
+     SPACE / OCEAN / EARTH BACKGROUND THEME
+     ============================================ */
+
+  /* Animated Space Background */
+  @keyframes space-drift {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-50px, -50px);
+    }
+  }
+
+  @keyframes stars-twinkle {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes aurora-wave {
+    0%, 100% {
+      transform: translateX(0) translateY(0) scaleY(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateX(50px) translateY(-20px) scaleY(1.2);
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes ocean-wave {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-30px) translateY(10px);
+    }
+  }
+
+  @keyframes earth-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Aurora/Northern Lights Effect */
+  .aurora-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.15;
+  }
+
+  .aurora-layer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 120%;
+    height: 80%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      hsl(260 100% 60% / 0.3) 20%,
+      hsl(190 100% 60% / 0.4) 40%,
+      hsl(320 100% 60% / 0.3) 60%,
+      hsl(145 100% 60% / 0.2) 80%,
+      transparent 100%
+    );
+    filter: blur(60px);
+    animation: aurora-wave 20s ease-in-out infinite;
+  }
+
+  .aurora-layer::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(120deg,
+      transparent 0%,
+      hsl(190 100% 60% / 0.3) 30%,
+      hsl(260 100% 60% / 0.4) 50%,
+      hsl(320 100% 60% / 0.2) 70%,
+      transparent 100%
+    );
+    filter: blur(80px);
+    animation: aurora-wave 25s ease-in-out infinite reverse;
+    animation-delay: -5s;
+  }
+
+  /* Ocean Wave Pattern */
+  .ocean-layer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.08;
+    background: 
+      radial-gradient(ellipse at 20% 100%, hsl(190 100% 50% / 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 100%, hsl(200 100% 50% / 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 100%, hsl(210 100% 50% / 0.4) 0%, transparent 50%);
+    animation: ocean-wave 15s ease-in-out infinite;
+  }
+
+  /* Floating Particles (Data Points in Space) */
+  @keyframes particle-float {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translate(20px, -30px) scale(1.2);
+      opacity: 0.8;
+    }
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: hsl(var(--primary));
+    box-shadow: 0 0 10px hsl(var(--primary) / 0.8);
+    animation: particle-float 8s ease-in-out infinite;
+  }
+
+  .particle:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; background: hsl(var(--primary)); }
+  .particle:nth-child(2) { top: 25%; left: 45%; animation-delay: 1s; background: hsl(var(--secondary)); }
+  .particle:nth-child(3) { top: 40%; left: 75%; animation-delay: 2s; background: hsl(var(--accent)); }
+  .particle:nth-child(4) { top: 60%; left: 25%; animation-delay: 3s; background: hsl(var(--success)); }
+  .particle:nth-child(5) { top: 75%; left: 65%; animation-delay: 4s; background: hsl(var(--warning)); }
+  .particle:nth-child(6) { top: 15%; left: 85%; animation-delay: 1.5s; background: hsl(var(--primary)); }
+  .particle:nth-child(7) { top: 50%; left: 10%; animation-delay: 2.5s; background: hsl(var(--secondary)); }
+  .particle:nth-child(8) { top: 85%; left: 40%; animation-delay: 3.5s; background: hsl(var(--accent)); }
+
+  /* Earth Globe Accent */
+  .earth-accent {
+    position: fixed;
+    bottom: -15%;
+    right: -10%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%,
+      hsl(145 60% 40% / 0.15) 0%,
+      hsl(200 70% 40% / 0.12) 30%,
+      hsl(220 60% 30% / 0.08) 60%,
+      transparent 100%
+    );
+    filter: blur(40px);
+    animation: earth-rotate 200s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Nebula Cloud Effect */
+  @keyframes nebula-drift {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.1;
+    }
+    50% {
+      transform: translate(30px, -20px) scale(1.1);
+      opacity: 0.2;
+    }
+  }
+
+  .nebula-cloud {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center,
+      hsl(260 80% 50% / 0.15) 0%,
+      hsl(280 70% 40% / 0.1) 40%,
+      transparent 70%
+    );
+    filter: blur(80px);
+    animation: nebula-drift 30s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .nebula-cloud-2 {
+    position: fixed;
+    bottom: 10%;
+    right: 15%;
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center,
+      hsl(190 80% 50% / 0.12) 0%,
+      hsl(200 70% 40% / 0.08) 40%,
+      transparent 70%
+    );
+    filter: blur(90px);
+    animation: nebula-drift 35s ease-in-out infinite reverse;
+    animation-delay: -10s;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Satellite Orbit Lines */
+  @keyframes orbit-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .orbit-line {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    border: 1px solid hsl(var(--primary) / 0.08);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit-rotate 60s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .orbit-line-2 {
+    width: 75%;
+    height: 75%;
+    border-color: hsl(var(--secondary) / 0.06);
+    animation-duration: 80s;
+    animation-direction: reverse;
+  }
+
+  .orbit-line-3 {
+    width: 90%;
+    height: 90%;
+    border-color: hsl(var(--accent) / 0.04);
+    animation-duration: 100s;
+  }
+
+  /* Space/Galaxy Background */
+  .space-background {
+    position: relative;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+  }
+
+  .space-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 60px 70px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 50px 50px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 90px 10px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 20px 100px, #eee, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 150px 150px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 110px 130px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 35px 75px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 180px 40px, #eee, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: stars-move 120s linear infinite;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  .space-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(1px 1px at 40px 60px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 80px 20px, #eee, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 120px 100px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 160px 140px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 30px 120px, #eee, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 100px 40px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 70px 90px, #fff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 140px 70px, #eee, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    animation: stars-move 180s linear infinite reverse;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  @keyframes stars-move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-200px);
+    }
+  }
+
+  /* Nebula effect */
+  .nebula-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(ellipse at 20% 30%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 70%, rgba(30, 144, 255, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(255, 20, 147, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 70% 20%, rgba(0, 191, 255, 0.08) 0%, transparent 50%);
+    animation: nebula-float 30s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes nebula-float {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+
+  /* Shooting stars */
+  .shooting-star {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, transparent);
+    animation: shoot 3s ease-in-out infinite;
+    opacity: 0;
+  }
+
+  .shooting-star:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    width: 100px;
+    animation-delay: 0s;
+  }
+
+  .shooting-star:nth-child(2) {
+    top: 40%;
+    left: 30%;
+    width: 80px;
+    animation-delay: 2s;
+  }
+
+  .shooting-star:nth-child(3) {
+    top: 60%;
+    left: 50%;
+    width: 120px;
+    animation-delay: 4s;
+  }
+
+  .shooting-star:nth-child(4) {
+    top: 80%;
+    left: 70%;
+    width: 90px;
+    animation-delay: 6s;
+  }
+
+  @keyframes shoot {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(300px) translateY(300px);
+      opacity: 0;
+    }
+  }
+
+  /* Twinkling stars */
+  .twinkle {
+    animation: twinkle-animation 2s ease-in-out infinite;
+  }
+
+  @keyframes twinkle-animation {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+}

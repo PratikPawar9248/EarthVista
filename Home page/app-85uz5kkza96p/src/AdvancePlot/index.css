@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark oceanography theme */
+    --background: 220 13% 8%;
+    --foreground: 210 40% 98%;
+    --card: 220 13% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 200 100% 60%;
+    --primary-foreground: 220 13% 8%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 220 13% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 200 100% 60%;
+    --radius: 0.75rem;
+
+    /* Ocean-themed gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(200 100% 20%), hsl(220 100% 15%));
+    --gradient-depth: linear-gradient(180deg, hsl(200 100% 30%), hsl(240 100% 10%));
+    --gradient-surface: linear-gradient(90deg, hsl(180 100% 40%), hsl(200 100% 50%));
+    
+    /* Glow effects */
+    --glow-primary: 0 0 20px hsl(200 100% 60% / 0.3);
+    --glow-accent: 0 0 15px hsl(180 100% 50% / 0.4);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: radial-gradient(ellipse at top, hsl(220 13% 12%) 0%, hsl(220 13% 8%) 100%);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/70;
+  }
+}
+
+@layer components {
+  .ocean-card {
+    @apply bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .ocean-button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    transition: var(--transition-smooth);
+    box-shadow: var(--glow-primary);
+  }
+
+  .ocean-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--glow-primary), 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .data-point {
+    @apply cursor-pointer transition-all duration-200;
+  }
+
+  .data-point:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+
+  .chart-container {
+    @apply bg-card/30 backdrop-blur-sm rounded-lg border border-border/30 p-4;
+  }
+
+  .stats-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+
+  .stat-card {
+    @apply ocean-card p-4 text-center;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold text-primary;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground mt-1;
+  }
+}
+
+/* Animation keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: var(--glow-primary);
+  }
+  50% {
+    box-shadow: var(--glow-primary), 0 0 30px hsl(200 100% 60% / 0.5);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
